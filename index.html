@@ -5,54 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bryce's Games</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
         body { 
-            font-family: Arial, sans-serif; 
-            text-align: center; 
-            margin: 40px; 
-            background-color: #f4f4f4; 
-            color: #333; 
+            font-family: 'Orbitron', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #0b0f19;
+            color: #fff;
         }
-        h1 { 
-            color: #222; 
-            font-size: 2.5em; 
-        }
+
         .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: 50px auto;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 255, 170, 0.8);
         }
+
+        h1 {
+            color: #00ffaa;
+            font-size: 3em;
+            text-shadow: 0 0 10px #00ffaa;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #ddd;
+        }
+
         .game-list { 
             list-style: none; 
             padding: 0; 
         }
+
         .game-list li { 
-            margin: 15px 0; 
+            margin: 20px 0; 
         }
-        a { 
-            text-decoration: none; 
-            color: #007BFF; 
-            font-weight: bold; 
+
+        a {
+            text-decoration: none;
+            color: #00ffaa;
+            font-weight: bold;
+            font-size: 1.5em;
+            padding: 10px 20px;
+            border: 2px solid #00ffaa;
+            border-radius: 5px;
+            display: inline-block;
+            transition: 0.3s;
         }
+
         a:hover {
-            text-decoration: underline;
+            background-color: #00ffaa;
+            color: #000;
+            text-shadow: 0 0 10px #000;
         }
+
         .video-container {
             margin-top: 30px;
         }
+
         video {
             width: 100%;
-            max-width: 560px;
+            max-width: 700px;
             border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 255, 170, 0.8);
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 1.2em;
+            color: #00ffaa;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Welcome to My Games</h1>
-        <p>Here you can find and download my games!</p>
+        <p>Download and play my latest creations!</p>
         
         <ul class="game-list">
             <li><a href="games/AlienAmbushBetaIPConnect.zip" download>Download Alien Invasion Beta</a></li>
@@ -67,7 +99,7 @@
             </video>
         </div>
 
-        <p>More games coming soon...</p>
+        <p class="footer">More games coming soon...</p>
     </div>
 </body>
 </html>
