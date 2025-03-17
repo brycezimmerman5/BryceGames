@@ -3,24 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bryces Games</title>
+    <title>Bryce's Games</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin: 40px; }
-        h1 { color: #333; }
-        .game-list { list-style: none; padding: 0; }
-        .game-list li { margin: 10px 0; }
-        a { text-decoration: none; color: blue; font-weight: bold; }
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            margin: 40px; 
+            background-color: #f4f4f4; 
+            color: #333; 
+        }
+        h1 { 
+            color: #222; 
+            font-size: 2.5em; 
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .game-list { 
+            list-style: none; 
+            padding: 0; 
+        }
+        .game-list li { 
+            margin: 15px 0; 
+        }
+        a { 
+            text-decoration: none; 
+            color: #007BFF; 
+            font-weight: bold; 
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .video-container {
+            margin-top: 30px;
+        }
+        video {
+            width: 100%;
+            max-width: 560px;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Games</h1>
-    <p>Here you can find and download my games!</p>
-    
-    <ul class="game-list">
-        <li><a href="games/AlienAmbushBetaIPConnect.zip" download>Download AlienInvasionBeta</a></li>
+    <div class="container">
+        <h1>Welcome to My Games</h1>
+        <p>Here you can find and download my games!</p>
         
-    </ul>
-    
-    <p>More games coming soon...</p>
+        <ul class="game-list">
+            <li><a href="games/AlienAmbushBetaIPConnect.zip" download>Download Alien Invasion Beta</a></li>
+        </ul>
+        
+        <div class="video-container">
+            <h2>Game Preview</h2>
+            <p>Check out gameplay footage below:</p>
+            <video controls>
+                <source src="videos/AlienAmbushGameplay.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <p>More games coming soon...</p>
+    </div>
 </body>
 </html>
